@@ -1,6 +1,6 @@
 # Movie-List
 [File Apk di GoogleDrive](https://drive.google.com/drive/u/0/folders/0B9NsAJtQet49TExJTUlyN2NJX1U)
-
+# Data Siswa
 Nama        : Osa Khoiruzzad
 <br>
 Kelas/Absen : XIRPL4/29
@@ -11,19 +11,27 @@ Angkatan    : 24
 <br>
 Sekolah     : SMK Telkom Malang
 <br><br>
-Jenis API<br>
+# Jenis API<br>
 https://www.themoviedb.org/documentation/api
 <br><br>
-Jenis Navigasi:Navigation Drawer
+# Jenis Navigasi: <br> 
+Navigation Drawer
 <br><br>
-Jenis Library: Sugar ORM
-Aplikasi tentang menampilkan list - list dari film yang terkenal di hollywood. Mempermudah pengguna dalam memakai karena tampilan sangat sederhana. Dengan memakai jenis navigasi Navigation Drawer, user lebih friendly karena penggunaan navigasi tersebut sudah sangat familiar
+# Jenis Library: <br>
+SQLite
+<br><br>
+# Detail: <br>
+Aplikasi tentang menampilkan list - list dari film yang terkenal di hollywood. Mempermudah pengguna dalam memakai karena tampilan sangat sederhana. Dengan memakai jenis navigasi Navigation Drawer, user lebih friendly karena penggunaan navigasi tersebut sudah sangat familiar. Local database SQLite digunakan untuk menyimpan data API yang telah diload, sehingga tanpa internet-pun aplikasi tetap bisa dibuka.
 <br>
 <br>
-Kelebihan : Lebih mudah<br>
+# Kelebihan : Lebih mudah
 <br>
-![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/1.jpg)
-![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/IMG-20170514-WA0013.jpg)
-![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/3.jpg)
-![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/4.jpg)
-![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/5.jpg)
+<br>
+
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/1.png)
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/2.png)
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/3.png)
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/4.png)
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/5.png)
+![Screenshot](https://github.com/osakhoiruzzadxirpl4029/Movie-List/blob/master/6.png)
+
