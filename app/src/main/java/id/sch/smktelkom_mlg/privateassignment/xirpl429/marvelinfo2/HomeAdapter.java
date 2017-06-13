@@ -19,6 +19,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     private List<HomeListItem> homeListItems;
     private Context context;
 
+//
+//    Place place;
+//    boolean isNew;
+
     //model dari HomeList
     public HomeAdapter(List<HomeListItem> homeListItems, Context context) {
         this.homeListItems = homeListItems;
@@ -52,7 +56,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
             @Override
             public void onClick(View view) {
-                // Toast.makeText(context, homeListItem.getJudul() + " dipilih", Toast.LENGTH_LONG).show();
+                //   Toast.makeText(context, homeListItem.getJudul() + " dipilih", Toast.LENGTH_LONG).show();
                 Intent singleBlogIntent = new Intent(context, HomeActivity.class);
                 singleBlogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 singleBlogIntent.putExtra("blog_id", position);
@@ -64,6 +68,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
+
         return homeListItems.size();
     }
 

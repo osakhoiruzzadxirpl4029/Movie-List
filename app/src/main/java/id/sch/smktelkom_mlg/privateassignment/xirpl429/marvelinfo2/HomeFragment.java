@@ -96,8 +96,6 @@ public class HomeFragment extends Fragment {
                             JSONObject jsonObject = new JSONObject(s);
 
 
-                            //JSONArray array = jsonObject.getJSONObject("data").getJSONArray("results");
-
                             JSONArray array = jsonObject.getJSONArray("results");
 
                             //JSONArray array2 = jsonObject.getJSONArray("multimedia");

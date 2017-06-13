@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             fragment = new HomeFragment();
             setTitle("Home");
+        } else if (id == R.id.nav_oke) {
+            fragment = new HomeFragment();
+            setTitle("Now Playing");
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commitNow();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
