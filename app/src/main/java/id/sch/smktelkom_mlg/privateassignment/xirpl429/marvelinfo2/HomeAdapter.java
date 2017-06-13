@@ -1,7 +1,6 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl429.marvelinfo2;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,17 +51,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                 .with(context)
                 .load(homeListItem.getBackdrop())
                 .into(holder.imageViewBackDrop);
-        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                //   Toast.makeText(context, homeListItem.getJudul() + " dipilih", Toast.LENGTH_LONG).show();
-                Intent singleBlogIntent = new Intent(context, HomeActivity.class);
-                singleBlogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                singleBlogIntent.putExtra("blog_id", position);
-                context.startActivity(singleBlogIntent);
-            }
-        });
     }
 
 
