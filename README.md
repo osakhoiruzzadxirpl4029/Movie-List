@@ -16,6 +16,7 @@ https://www.themoviedb.org/documentation/api
 <br><br>
 Jenis Navigasi:Navigation Drawer
 <br><br>
+Jenis Library: Sugar ORM
 Aplikasi tentang menampilkan list - list dari film yang terkenal di hollywood. Mempermudah pengguna dalam memakai karena tampilan sangat sederhana. Dengan memakai jenis navigasi Navigation Drawer, user lebih friendly karena penggunaan navigasi tersebut sudah sangat familiar
 <br>
 <br>
