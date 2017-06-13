@@ -18,7 +18,7 @@ https://www.themoviedb.org/documentation/api
 Navigation Drawer
 <br><br>
 # Jenis Library: <br>
-SQLite
+SQLite Dasar
 <br><br>
 # Detail: <br>
 Aplikasi tentang menampilkan list - list dari film yang terkenal di hollywood. Mempermudah pengguna dalam memakai karena tampilan sangat sederhana. Dengan memakai jenis navigasi Navigation Drawer, user lebih friendly karena penggunaan navigasi tersebut sudah sangat familiar. Local database SQLite digunakan untuk menyimpan data API yang telah diload, sehingga tanpa internet-pun aplikasi tetap bisa dibuka.
