@@ -25,43 +25,33 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
-    private static final String URL_DATA = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=cf48be249b4ace270b61684fe3644bae";
-
+public class LatestFragment extends Fragment {
+    private static final String URL_DATA = "https://api.themoviedb.org/3/movie/upcoming?api_key=cf48be249b4ace270b61684fe3644bae";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
+    private List<LatestListItem> listItems;
 
-    private List<HomeListItem> listItems;
-
-
-    public HomeFragment() {
+    public LatestFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        View view = inflater.inflate(R.layout.fragment_latest, container, false);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView3);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         listItems = new ArrayList<>();
-
         loadRecyclerViewData();
-
-
         return view;
     }
 
     private void loadRecyclerViewData() {
-
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
 
         progressDialog.setMessage("Loading data...");
@@ -93,10 +83,12 @@ public class HomeFragment extends Fragment {
 
                                 JSONObject o = array.getJSONObject(i);
 
-                                HomeListItem item = new HomeListItem(
+                                LatestListItem item = new LatestListItem(
 
                                         "https://image.tmdb.org/t/p/w500" + o.getString("backdrop_path"),
+
                                         o.getString("title")
+
 
                                 );
 
@@ -104,7 +96,7 @@ public class HomeFragment extends Fragment {
 
                             }
 
-                            adapter = new HomeAdapter(listItems, getActivity().getApplicationContext());
+                            adapter = new LatestAdapter(listItems, getActivity().getApplicationContext());
 
                             recyclerView.setAdapter(adapter);
 
@@ -139,8 +131,6 @@ public class HomeFragment extends Fragment {
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
 
         requestQueue.add(stringRequest);
-
     }
+
 }
-
-

@@ -64,12 +64,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+
         if (id == R.id.action_settings) {
             return true;
         }
@@ -83,7 +81,6 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
         changePage(id);
-
         return true;
     }
 
@@ -92,10 +89,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             fragment = new HomeFragment();
-            setTitle("Home");
+            setTitle("Popular");
         } else if (id == R.id.nav_oke) {
-            fragment = new HomeFragment();
+            fragment = new NowPlayingFragment();
             setTitle("Now Playing");
+        } else if (id == R.id.nav_mantap) {
+            fragment = new LatestFragment();
+            setTitle("Latest");
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commitNow();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

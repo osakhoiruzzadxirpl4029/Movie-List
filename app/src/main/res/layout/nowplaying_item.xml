@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -14,18 +15,18 @@
         app:cardCornerRadius="3dp">
 
         <LinearLayout
-            android:id="@+id/LinearLayout"
+            android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageViewBackDrop"
+                android:id="@+id/imageViewBackDrop2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textViewJudul"
+                android:id="@+id/textViewJudul2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="7dp"
@@ -35,6 +36,16 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
                 android:textSize="10pt" />
 
+            <TextView
+                android:id="@+id/textViewDeskripsi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="7dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="10pt"
+                tools:text="Deskripsi" />
 
         </LinearLayout>
 

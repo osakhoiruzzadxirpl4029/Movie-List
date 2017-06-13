@@ -14,18 +14,18 @@
         app:cardCornerRadius="3dp">
 
         <LinearLayout
-            android:id="@+id/LinearLayout"
+            android:id="@+id/LinearLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageViewBackDrop"
+                android:id="@+id/imageViewBackDrop3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textViewJudul"
+                android:id="@+id/textViewJudul3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="7dp"

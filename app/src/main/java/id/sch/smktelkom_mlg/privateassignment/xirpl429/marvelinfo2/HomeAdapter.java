@@ -17,12 +17,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     private List<HomeListItem> homeListItems;
     private Context context;
-
-//
-//    Place place;
-//    boolean isNew;
-
-    //model dari HomeList
     public HomeAdapter(List<HomeListItem> homeListItems, Context context) {
         this.homeListItems = homeListItems;
         this.context = context;
@@ -40,13 +34,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         final HomeListItem homeListItem = homeListItems.get(position);
 
         holder.textViewJudul.setText(homeListItem.getJudul());
-        //holder.imageViewOtof.setImageURI(homeListItem.getImageUrl());
-        //glide ini nnt
 
-//
-//
-//        }
-//        );
         Glide
                 .with(context)
                 .load(homeListItem.getBackdrop())

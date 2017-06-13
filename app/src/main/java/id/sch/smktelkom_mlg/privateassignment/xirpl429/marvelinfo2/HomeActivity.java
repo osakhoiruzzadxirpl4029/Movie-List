@@ -27,7 +27,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 public class HomeActivity extends AppCompatActivity {
@@ -41,10 +40,8 @@ public class HomeActivity extends AppCompatActivity {
     public Spinner spinnerRating;
     public String Backdrop;
     public byte[] gambar = new byte[2048];
-    Place place;
     boolean isPressed = true;
     boolean isNew;
-    ArrayList<Place> pItem;
     JSONObject o = null;
     private Integer mPostkey = null;
 
@@ -69,33 +66,7 @@ public class HomeActivity extends AppCompatActivity {
 
         spinnerRating = (Spinner) findViewById(R.id.spinnerRating);
         btnRate = (Button) findViewById(R.id.btnRate);
-        btnRate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isPressed) {
-                    doSave();
-                    Snackbar.make(view, "Anda berhasil memberi rating, lihat di favorit", Snackbar.LENGTH_LONG)
 
-                            .setAction("Action", null).show();
-                } else {
-                    Snackbar.make(view, "Artikel favorit anda", Snackbar.LENGTH_LONG)
-
-                            .setAction("Action", null).show();
-                }
-                isPressed = !isPressed;
-            }
-
-            private void doSave() {
-                String overview = textViewOverview.getText().toString();
-                String terbit = textViewTerbit.getText().toString();
-                String judul = textViewJudul.getText().toString();
-                byte[] backdrop = gambar;
-                String rate = spinnerRating.getSelectedItem().toString();
-
-                place = new Place(overview, terbit, judul, backdrop, rate);
-                place.save();
-            }
-        });
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,8 +101,7 @@ public class HomeActivity extends AppCompatActivity {
                             textViewJudul.setText(o.getString("title"));
                             textViewTerbit.setText(o.getString("release_date"));
                             textViewOverview.setText(o.getString("overview"));
-//                            Backdrop =  "https://image.tmdb.org/t/p/w500" + o.getString("poster_path");
-//                            url = o.getJSONObject("link").getString("url");
+
 
                             Glide
 

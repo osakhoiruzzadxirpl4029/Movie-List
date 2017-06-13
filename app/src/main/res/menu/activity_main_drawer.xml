@@ -5,12 +5,15 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Popular" />
         <item
             android:id="@+id/nav_oke"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Now Playing" />
-
+        <item
+            android:id="@+id/nav_mantap"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Latest" />
     </group>
 
 
